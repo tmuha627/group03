@@ -16,7 +16,7 @@ tech_publishDate01 = techSoup01.find_all("time", datetime="2023-09-21T22:41:26.7
 tech_body01 = techSoup01.find_all(class_ = "duet--article--article-body-component")
 
 #paste into text document
-techText01 = open("group03/0301_tech.txt", mode="wt")
+techText01 = open("0301_tech.txt", mode="wt")
 
 for authors in tech_author01:
     techText01.write("Author: " + authors.text)
@@ -49,7 +49,7 @@ tech_publishDate02 = techSoup02.find_all("time", datetime="2023-09-22T12:00:01+0
 tech_body02 = techSoup02.find_all(class_ = "group")
 
 #paste into text document
-techText02 = open("group03/0302_tech.txt", mode="wt")
+techText02 = open("0302_tech.txt", mode="wt")
 
 for authors in tech_author02:
     techText02.write("Author: " + authors.text)
@@ -82,7 +82,7 @@ tech_publishDate03 = techSoup03.find_all("time", itemprop="datePublished")
 tech_body03 = techSoup03.find_all(class_ = "group")
 
 #paste into text document
-techText03 = open("group03/0303_tech.txt", mode="wt")
+techText03 = open("0303_tech.txt", mode="wt")
 
 for authors in tech_author03:
     techText03.write("Author: " + authors.text)
@@ -115,7 +115,7 @@ tech_publishDate04 = techSoup04.find_all("time")
 tech_body04 = techSoup04.find_all("p")
 
 #paste into text document
-techText04 = open("group03/0304_tech.txt", mode="wt")
+techText04 = open("0304_tech.txt", mode="wt")
 
 for authors in tech_author04:
     techText04.write("Author: " + authors.text)
@@ -148,7 +148,7 @@ tech_publishDate05 = techSoup05.find_all("time")
 tech_body05 = techSoup05.find_all(class_ ="ArticleBody font-secondary fr-view")
 
 #paste into text document
-techText05 = open("group03/0305_science.txt", mode="wt")
+techText05 = open("0305_science.txt", mode="wt")
 
 for authors in tech_author05:
     techText05.write("Author: " + authors.text)

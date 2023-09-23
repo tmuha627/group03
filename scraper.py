@@ -102,3 +102,71 @@ for body in tech_body03:
     techText03.write('\n')
 
 techText03.close()
+
+#FOR ARTICLE 4
+tech_url04 = "https://www.cnet.com/tech/computing/intel-plans-a-quantum-computing-approach-to-leapfrog-rivals/"
+tech_page04 = requests.get(tech_url04)
+techSoup04 = bs(tech_page04.text, 'html.parser')
+
+#Grab specifics
+tech_author04 = techSoup04.find_all("span", class_ ="c-globalAuthor_name")
+tech_publishPlace04 = techSoup04.find_all(class_ = "c-siteFooter_copyright")
+tech_publishDate04 = techSoup04.find_all("time")
+tech_body04 = techSoup04.find_all("p")
+
+#paste into text document
+techText04 = open("group03/0304_tech.txt", mode="wt")
+
+for authors in tech_author04:
+    techText04.write("Author: " + authors.text)
+    techText04.write('\n')
+
+for places in tech_publishPlace04:
+    techText04.write("Place of Publish: " + places.text)
+    techText04.write('\n')
+
+for date in tech_publishDate04:
+    techText04.write("Published on: " + date.text)
+    techText04.write('\n')
+
+techText04.write("Body: " + '\n')
+for body in tech_body04:
+    techText04.write(body.text)
+    techText04.write('\n')
+
+techText04.close()
+
+#FOR ARTICLE 5
+tech_url05 = "https://www.the-scientist.com/news/a-rare-genetic-mutation-protects-against-alzheimer-s-disease-71374"
+tech_page05 = requests.get(tech_url05)
+techSoup05 = bs(tech_page05.text, 'html.parser')
+
+#Grab specifics
+tech_author05 = techSoup05.find_all("span", class_="author-name with-link")
+tech_publishPlace05 = techSoup05.find_all("div", class_ ="copyRight")
+tech_publishDate05 = techSoup05.find_all("time")
+tech_body05 = techSoup05.find_all(class_ ="ArticleBody font-secondary fr-view")
+
+#paste into text document
+techText05 = open("group03/0305_science.txt", mode="wt")
+
+for authors in tech_author05:
+    techText05.write("Author: " + authors.text)
+    techText05.write('\n')
+
+for places in tech_publishPlace05:
+    techText05.write("Place of Publish: " + places.text)
+    techText05.write('\n')
+
+for date in tech_publishDate05:
+    techText05.write("Published on: " + date.text)
+    techText05.write('\n')
+
+techText05.write("Body: " + '\n')
+for body in tech_body05:
+    techText05.write(body.text)
+    techText05.write('\n')
+
+techText05.close()
+
+

@@ -1,0 +1,26 @@
+Author: By Tom Gerken & Liv McMahon
+Place of Publish: CopyrightGame of ThronesArtificial intelligence
+Place of Publish: Terms of UseAbout the BBCPrivacy PolicyCookiesAccessibility HelpParental GuidanceContact the BBCGet Personalised NewslettersWhy you can trust the BBCAdvertise with us
+Published on: 4 days ago (9/21/23)
+Body: 
+US authors George RR Martin and John Grisham are suing ChatGPT-owner OpenAI over claims their copyright was infringed to train the system. 
+Martin is known for his fantasy series A Song of Ice and Fire, which was adapted into HBO show Game of Thrones.
+ChatGPT and other large language models (LLMs) "learn" by analysing a massive amount of data often sourced online.
+The lawsuit claims the authors' books were used without their permission to make ChatGPT smarter.
+OpenAI said it respected the rights of authors, and believed "they should benefit from AI technology".
+Other prominent authors named in the complaint include Jonathan Franzen, Jodi Picoult and George Saunders.
+The case has been brought to the federal court in Manhattan, New York, by the Authors Guild, a trade group in the US working on behalf of the named authors.
+According to the filing, it accused OpenAI of engaging in "systematic theft on a mass scale".
+It follows similar legal action brought by comedian Sarah Silverman in July, as well as an open letter signed by authors Margaret Atwood and Philip Pullman that same month calling for AI companies to compensate them for using their work.
+A spokesperson for OpenAI said: "We're having productive conversations with many creators around the world, including the Authors Guild, and have been working co-operatively to understand and discuss their concerns about AI.
+"We're optimistic we will continue to find mutually beneficial ways to work together."
+The case argues that the LLM was fed data from copyrighted books without the permission of the authors, in part because it was able to provide accurate summaries of them.
+The lawsuit also pointed to a broader concern in the media industry - that this kind of technology is "displacing human-authored" content.
+Patrick Goold, reader in law at City University, told BBC News that while he could sympathise with the authors behind the lawsuit, he believed it was unlikely it would succeed, saying they would initially need to prove ChatGPT had copied and duplicated their work.
+"They're actually not really worried about copyright, what they're worried about is that AI is a job killer," he said, likening the concerns to those screenwriters are currently protesting against in Hollywood.
+"When we're talking about AI automation and replacing human labour... it's just not something that copyright should fix.
+"What we need to be doing is going to Parliament and Congress and talking about how AI is going to displace the creative arts and what we need to do about that in the future."
+The case is the latest in a long line of complaints brought against developers of so-called generative AI - that is, artificial intelligence that can create media based on text prompts - over this concern.
+It comes after digital artists sued text-to-image generators Stability AI and Midjourney in January, claiming they only function by being trained on copyrighted artwork.
+And OpenAI is also facing a lawsuit, alongside Microsoft and programming site GitHub, from a group of computing experts who argue their code was used without their permission to train an AI called Copilot.
+None of these lawsuits has yet been resolved.

@@ -1,0 +1,4 @@
+Author: Ashley Capoot
+Place of Publish: Google, DoD built an AI-powered microscope to help doctors spot cancer
+Date of Publish: Published Mon, Sep 18 20231:49 PM EDT
+Body of Text: The Department of Defense has teamed up with Google to build an AI-powered microscope that can help doctors identify cancer. The tool is called an Augmented Reality Microscope, and it will usually cost health systems between $90,000 to $100,000. Experts believe the ARM will help support doctors in smaller labs as they battle with workforce shortages and mounting caseloads. 

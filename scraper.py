@@ -333,3 +333,159 @@ for body in tech_body10:
     techText10.write('\n')
 
 techText10.close()
+
+#Article11
+techURL11 = "https://www.cnbc.com/2023/09/21/cisco-acquiring-splunk-for-157-a-share-in-cash.html" 
+techPage11 = requests.get(techURL11) 
+techSoup11 = bs(techPage11.text, 'html.parser')
+
+#Scrape Information
+author11 = techSoup11.find_all(class_ = "Author-authorName")
+publishPlace11 = techSoup11.find_all("title")
+techDate11 = techSoup11.find_all("time", datetime = "2023-09-21T11:53:31+0000")
+techBody11 = techSoup11.find(class_ = "group")
+
+#Paste data into txt file   
+techText11 = open("0311_tech.txt", mode = "wt")
+
+for author in author11:
+    techText11.write("Author: " + author.text)
+    techText11.write("\n")
+
+for loco in publishPlace11:
+    techText11.write("Place of Publish: " + loco.text)
+    techText11.write("\n") 
+
+for date in techDate11:
+    techText11.write("Date of Publish: "+ date.text)
+    techText11.write("\n")
+
+for body in techBody11:
+    techText11.write("Body of Text: " + body.text)
+
+techText11.close() 
+
+#Article12
+techURL12 = "https://www.cnbc.com/2023/09/18/google-dod-built-an-ai-powered-microscope-to-help-doctors-spot-cancer.html"
+techPage12 = requests.get(techURL12)
+techSoup12 = bs(techPage12.text, 'html.parser')
+
+#Scrape Information
+author12 = techSoup12.find_all(class_ ="Author-authorName")
+publishPlace12 = techSoup12.find_all("title")
+techDate12 = techSoup12.find_all("time", datetime = "2023-09-18T17:49:14+0000")
+techBody12 = techSoup12.find(class_ = "group")
+
+
+#Paste into txt file
+techText12 = open("0312_tech.txt", mode = "wt")
+
+for author in author12:
+    techText12.write("Author: " + author.text)
+    techText12.write("\n")
+
+for place in publishPlace12:
+    techText12.write("Place of Publish: " + place.text)
+    techText12.write("\n")
+
+for date in techDate12:
+    techText12.write("Date of Publish: " + date.text)
+    techText12.write("\n")
+
+for body in techBody12:
+    techText12.write("Body of Text: " + body.text)
+
+techText12.close()
+
+#Article13
+techURL13 = "https://www.cnbc.com/2023/09/19/huaweis-chip-breakthrough-poses-new-threat-to-apple-in-china.html"
+techPage13 = requests.get(techURL13)
+techSoup13 = bs(techPage13.text, 'html.parser')
+
+#Scrape Information
+author13 = techSoup13.find_all(class_ = "Author-authorName")
+publishPlace13 = techSoup13.find_all("title")
+techDate13 = techSoup13.find_all("time", datetime = "2023-09-19T05:58:56+0000")
+techBody13 = techSoup13.find(class_ = "group")
+
+#Paste into txt file
+techText13 = open("0313_tech.txt", mode = "wt")
+
+for author in author13:
+    techText13.write("Author: " + author.text)
+    techText13.write("\n")
+
+for place in publishPlace13:
+    techText13.write("Place of Publish: " + place.text)
+    techText13.write("\n")
+
+for date in techDate13:
+    techText13.write("Date of Publish: " + date.text)
+    techText13.write("\n")
+
+for body in techBody13:
+    techText13.write("Body of Text: " + body.text)
+
+techText13.close()
+
+#Article14
+techURL14 = "https://www.cnbc.com/2023/07/24/the-critical-cybersecurity-backup-plan-too-many-companies-are-ignoring.html" 
+techPage14 = requests.get(techURL14)
+techSoup14 = bs(techPage14.text, 'html.parser')
+
+#Scrape Information
+author14 = techSoup14.find_all(class_ = "Author-authorName")
+publishPlace14 = techSoup14.find_all("title")
+techDate14 = techSoup14.find_all("time", datetime = "2023-07-24T15:20:46+0000")
+techBody14 = techSoup14.find(class_ = "group")
+
+#Paste into txt file
+techText14 = open("0314_tech.txt", mode = "wt")
+
+for author in author14:
+    techText14.write("Author: " + author.text)
+    techText14.write("\n")
+
+for place in publishPlace14:
+    techText14.write("Place of Publish: " + place.text)
+    techText14.write("\n")
+
+for date in techDate14:
+    techText14.write("Date of Publish: " + date.text)
+    techText14.write("\n")
+
+for body in techBody14:
+    techText14.write("Body of Text: " + body.text)
+
+techText14.close()
+
+#Article15
+scienceURL3 = "https://www.cnbc.com/2023/09/12/new-covid-vaccines-cdc-advisors-recommend-pfizer-and-moderna-shots.html"
+sciencePage3 = requests.get(scienceURL3)
+scienceSoup3 = bs(sciencePage3.text, 'html.parser')
+
+#Scrape for information
+author15 = scienceSoup3.find(class_ = "group")
+publishPlace15 = scienceSoup3.find_all("title")
+techDate15 = scienceSoup3.find_all("time", datetime = "2023-09-12T20:00:57+0000")
+techBody15 = techSoup14.find(class_ = "group")
+
+#Paste into txt file
+techText15 = open("0315_science.txt", mode = "wt")
+
+for author in author15:
+    techText15.write("Author: " + author.text)
+    techText15.write("\n")
+
+for place in publishPlace15:
+    techText15.write("Place of Publish: " + place.text)
+    techText15.write("\n")
+
+for date in techDate15:
+    techText15.write("Date of Publish" + date.text)
+    techText15.write("\n")
+
+for body in techBody15:
+    techText15.write("Body of Text: " + body.text)
+
+techText15.close()

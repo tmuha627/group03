@@ -1,0 +1,18 @@
+Author: Jess Weatherbed
+Place of Publish: Google is teasing Apple again over its lack of RCS messaging support - The Verge
+Place of Publish: The Verge
+Place of Publish: The Verge
+Place of Publish: Expand
+Place of Publish: The Verge
+Place of Publish: Expand
+Place of Publish: Comments
+Place of Publish: Comments
+Place of Publish: The Verge
+Published on:  Sep 21, 2023, 4:15 PM UTC
+Body: 
+Google is revisiting the “Get The Message” publicity campaign started last year to pressure Apple into adopting the Rich Communication Services, or RCS, messaging protocol. The latest installment includes new content and a cheesy video advertising a fake “iPager” gadget — a jab at Apple for converting iMessages texted to Android devices into old-fashioned SMS and MMS.
+“iPager isn’t real, but the problems that Apple causes by using SMS are,” said Google in the video description on YouTube. “Let’s make texting better for everyone and help Apple #GetTheMessage and upgrade to RCS.”
+
+RCS offers several improvements to messaging, including end-to-end encryption, read receipts, and the ability to share high-resolution photos and videos. iMessage offers similar features but only for messages sent between other iMessage users, resulting in Android users being seen as green message bubble nuisances in group messages — a real issue in countries like the US where more than half the population is using an iPhone.
+Carriers and phone manufacturers like Samsung have already adopted RCS technology, but Apple’s commitment to its own iMessage standard has drawn Google’s ire for some time. In January last year, Google SVP Hiroshi Lockheimer criticized Apple for “holding back the user experience” for customers. Apple hasn’t budged its stance despite Google’s lighthearted bullying — last year at the Code Conference, Tim Cook said anyone frustrated by their green message bubbles should just buy an iPhone.
+Court documents from Apple’s legal dispute with Epic Games in 2021 revealed that the iPhone maker sees its iMessage platform as a key service for locking customers into its ecosystem and that it believes moving iMessage to Android would “hurt us more than help.” So providing Android users with an iMessage-like experience by adopting RCS is presumably low on Apple’s priorities.

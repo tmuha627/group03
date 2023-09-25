@@ -1,0 +1,19 @@
+Author: Wes Davis
+Place of Publish: Meta could announce AI chatbots for young people on Instagram and Facebook soon - The Verge
+Place of Publish: The Verge
+Place of Publish: The Verge
+Place of Publish: Expand
+Place of Publish: The Verge
+Place of Publish: Expand
+Place of Publish: Comments
+Place of Publish: Comments
+Place of Publish: The Verge
+Published on:  Sep 24, 2023, 7:30 PM UTC
+Body: 
+Meta is preparing to announce a generative AI chatbot, called “Gen AI Personas” internally, aimed at younger users, according to The Wall Street Journal. Reportedly set to launch during the company’s Meta Connect event that starts Wednesday, they would come in multiple “personas” geared towards engaging young users with more colorful behavior, following ChatGPT’s rise over the last year as one of the fastest-growing apps ever. Similar, but more generally targeted, Meta chatbot personas have already been reportedly tested on Instagram. 
+According to internal chats the Journal viewed, the company has tested a “sassy robot” persona inspired by Bender from Futurama and an overly curious “Alvin the Alien” that one employee worried could imply the bot was made to gather personal information. A particularly problematic chatbot reportedly told a Meta employee, “When you’re with a girl, it’s all about the experience. And if she’s barfing on you, that’s definitely an experience.” 
+RelatedMeta sets GPT-4 as the bar for its next AI model, says a new reportBing, Bard, and ChatGPT: How AI is rewriting the internet
+Meta means to create “dozens” of these bots, writes the Journal, and has even done some work on a chatbot creation tool to enable celebrities to make their own chatbots for their fans. There may also be some more geared towards productivity, able to help with “coding and other tasks,” according to the article.
+Meta’s other AI work lately includes reportedly developing a more powerful large language model to rival OpenAI’s latest work with GPT-4, the model that underpins ChatGPT and Bing, as well as an AI model built just to help give legs to its Horizon Worlds avatars. During Meta Connect, the company will also show off more about its metaverse project, and new Quest 3 headset.
+The Journal quotes former Snap and Instagram executive Meghana Dhar as saying chatbots don’t “scream Gen Z to me, but definitely Gen Z is much more comfortable” with newer technology. She added that Meta’s goal with the chatbots, as always with new products, is to keep them engaged for longer so it has “increased opportunity to serve them ads.”
+

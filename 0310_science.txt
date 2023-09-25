@@ -1,0 +1,53 @@
+Author: Georgina Torbet
+Place of Publish: NASA collected a sample from an asteroid for the first time — here’s why it matters - The Verge
+Place of Publish: The Verge
+Place of Publish: The Verge
+Place of Publish: Expand
+Place of Publish: The Verge
+Place of Publish: Expand
+Place of Publish: Comments
+Place of Publish: Comments
+Place of Publish: The Verge
+Published on:  Sep 24, 2023, 6:26 PM UTC
+Body: 
+NASA completed its first-ever sample return mission from an asteroid today, with a science capsule containing material from an asteroid landing after having traveled on a 1.2 billion-mile journey from the asteroid Bennu. The capsule was released from the OSIRIS-REx spacecraft as it passed by Earth this morning, entering the atmosphere at around 27,000 mph. 
+The OSIRIS-REx mission, launched in 2016, has collected as much as several hundred grams of asteroid material, which could help scientists understand the earliest stages of the solar system.
+“NASA invests in small body missions like OSIRIS-REx to investigate the rich population of asteroids in our solar system that can give us clues about how the solar system formed and evolved,” said Melissa Morris, OSIRIS-REx program executive, in a mission overview briefing. “It’s our own origin story.”
+The capsule was released from the OSIRIS-REx spacecraft as it passed by Earth this morning
+The science capsule was slowed by parachutes and landed in the Department of Defense’s Utah Test and Training Range at 10:52 AM ET, a landing area chosen as it is the largest restricted airspace in the United States and has been used for previous NASA sample return missions like Genesis and Stardust. 
+The landing area is 36 miles by 8.5 miles, and the entire mission has required a very high level of precision — particularly for the spacecraft to rendezvous with the asteroid and collect its sample in 2020.
+“The really precise navigation required to orbit Bennu and to touch down and collect our sample, we were under a meter away from our target,” Sandra Freund, OSIRIS-REx program manager, said in a pre-landing briefing. “So that illustrates what kind of navigation precision we’ve had throughout this mission.” 
+Recovery teams collected the sample from the Utah desert, with a helicopter carrying the sample taking off at 12:15 PM ET. The capsule will be taken to a temporary clean room for first disassembly, removing some of the larger parts such as the backshell. It will then undergo a process called a nitrogen purge in which nitrogen is pumped into the canister to protect the sample. This prevents any of Earth’s atmosphere from entering it as it is shipped to Johnson Space Center in Houston, Texas, where the canister will be opened for the first time so the sample can be analyzed.
+ Photo by GEORGE FREY/AFP via Getty Images
+Why do we need an asteroid sample?
+“We’re really interested in trace organic molecular chemistry,” Dante Lauretta, OSIRIS-REx principal investigator, told The Verge. “We really want to understand — the things that are used in biology today, like amino acids that make proteins and nucleic acids that make up our genes — were they formed in ancient asteroid bodies and delivered to the Earth from outer space?”
+If you’re not familiar with models of the formation of the solar system, that idea might sound outlandish, bordering on fantastical. But it’s actually a fairly well-supported and widely accepted theory for how some of the key elements for life came to be on Earth.
+It’s important to be clear that the theory is not that life itself arose elsewhere and was delivered to Earth, but rather that the basic building blocks of life — often referred to as organic compounds — could have arrived here billions of years ago carried by asteroids.
+That’s been a theory for decades; but to test it out, scientists need access to asteroidal material. Going to visit an asteroid and using instruments on a spacecraft to study it is a good start, but to do the kind of detailed analysis scientists want requires a much bigger laboratory, equipped with instruments like a mile-wide type of particle accelerator called a synchrotron which would be impossible to fit onto a spacecraft.
+“were they formed in ancient asteroid bodies and delivered to the Earth from outer space?”
+Another option is to study meteorites, which are pieces of matter (including from asteroids) that come from space and fall to Earth’s surface. That’s how most of this research has been performed historically, using these tiny fragments as samples. 
+But there are two problems with this approach. Firstly, when a meteorite falls, it doesn’t have the context of where in the solar system it came from. Researchers can’t know its origin, or see what other bodies it was close to, which can give important clues to the interpretation of any data. And secondly, by the time a meteorite has passed through Earth’s atmosphere and landed, it may have picked up matter along the way and been contaminated by the local environment.
+When scientists are looking for these trace organic compounds, they need to know that anything they find comes from space and wasn’t picked up here on Earth. So to do that, they need an asteroid sample that is as pristine as possible. That’s where OSIRIS-REx comes in.
+
+A worldwide effort
+The OSIRIS-REx mission is the first time that NASA has brought back a sample from an asteroid, but it is following in the footsteps of the Japanese space agency JAXA, which collected two asteroid samples in its historic Hayabusa and Hayabusa 2 missions. Though the first Hayabusa mission gathered just a tiny amount of material, the second mission managed to return around five grams of material from asteroid Ryugu in 2020. 
+OSIRIS-REx is returning much more material from asteroid Bennu, at around 250 grams, which means that more science can be done — particularly when looking for those small amounts of trace materials. But researchers see the two missions as complementary, rather than competitive.
+“Not all asteroids are the same,” said Lauretta, who is also a member of the Hayabusa 2 team. Both Ryugu and Bennu have a similar spinning-top-like shape, but they look very different. Ryugu is larger and more red in color, while Bennu is smaller and more blue. Scientists still aren’t sure what that difference in color means, but being able to analyze and compare the samples on Earth should help understand both how the asteroids are similar and how they differ.
+“We look at this as not two sample analysis programs, but one big sample analysis program,” Lauretta said, “because it’s a worldwide effort.”
+
+A window into the early solar system
+When scientists want to understand how the Earth formed, they need to look beyond our planet and out into the solar system. Star systems form from enormous clouds of gas that collapse into a star at the center, spinning a disk of material around it. 
+That’s clear from looking at other star systems, but there’s also evidence from our own solar system: the planets revolve around the sun in the same direction and in a single plane, supporting the idea they formed from a single disk of material.Some of that material coalesced into planets, and some was swept into the earliest asteroids, a number of which still exist today.
+When scientists want to understand how the Earth formed, they need to look beyond our planet and out into the solar system
+In fact, the estimates we have for the age of the solar system come from dating grains within meteorites that have fallen to Earth. That’s because Earth has factors like erosion and plate tectonics which recycle rocks and wipe away the earliest history of the planet, meaning the oldest rocks we have ever found here are around 4 billion years old. The material from asteroids, however, can be even older.
+“The asteroids date from about 500 million years earlier in time than the oldest rocks on Earth. So as a geologist, I want to go back all the way to the beginning,” Lauretta said. “And the fun thing is, when you’re looking at asteroids you go literally to the very beginning of the solar system.”
+Bennu, the asteroid from which OSIRIS-REx collected its sample, is thought to be made up of material that is around 4.5 billion years old, making it a potential time capsule from the earliest stages of the solar system. But researchers can’t know its age for sure until a detailed analysis has been performed.
+ Image: NASA
+A new asteroid target
+Now that the OSIRIS-REx spacecraft has dropped off the capsule containing the sample, its initial job is over. But the spacecraft is still in space, and even though it can’t collect another sample it does still have power and a propulsion system, and all its science instruments still operating.
+So rather than waste this craft, it will become OSIRIS-APEX and go on to study a new target, the asteroid Apophis. By a fortunate chance of orbital dynamics, it will be able to rendezvous with this asteroid — one of the most famous in the solar system, because it will come close to Earth in the next few years — and study it.
+“In 2029, in April, Apophis is gonna fly within 30,000 kilometers of the surface of the Earth, which is about the altitude that our weather satellites orbit at,” Lauretta said. “It’s the biggest, closest flyby of an asteroid for a thousand years,” and it may even be visible to the naked eye from some locations on Earth.
+OSIRIS-APEX will be able to follow the asteroid’s path around Earth and meet it, to perform more science observations.
+As for the sample from asteroid Bennu, that will be taken to a special facility at NASA’s Johnson Space Center in Houston, where work can begin to understand the chemistry of this precious commodity. 
+Getting the sample back to Earth is just the beginning of the science research, and the team is anxiously awaiting this culmination of all their efforts.
+“I get to be one of the very first people on earth to see the capsule, as it is in position out there in the desert. It’s going to be quite an emotional moment for me,” Lauretta said. “We’ve been building and testing and designing this thing for over 12 years. So it’s the end of a very, very long journey, and the beginning of the next chapter.”

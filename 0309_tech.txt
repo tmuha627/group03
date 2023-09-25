@@ -1,0 +1,25 @@
+Author: Sean Hollister
+Place of Publish: Valve: don’t expect a faster Steam Deck ‘in the next couple of years’ - The Verge
+Place of Publish: The Verge
+Place of Publish: The Verge
+Place of Publish: Expand
+Place of Publish: The Verge
+Place of Publish: Expand
+Place of Publish: Comments
+Place of Publish: Comments
+Place of Publish: The Verge
+Published on:  Sep 22, 2023, 1:23 AM UTC
+Body: 
+Valve has been clear it wants to build a Steam Deck 2 — and equally clear that a faster handheld wouldn’t arrive soon. Now, Valve’s Pierre-Loup Griffais tells The Verge and CNBC that it could be late 2025 or beyond before it raises that bar — because it wants to see a leap in performance without a significant hit to battery life.
+“I don’t anticipate such a leap to be possible in the next couple of years,” he told me via email. 
+Here’s the whole quote:
+It’s important to us that the Deck offers a fixed performance target for developers, and that the message to customers is simple, where every Deck can play the same games. As such, changing the performance level is not something we are taking lightly, and we only want to do so when there is a significant enough increase to be had. We also don’t want more performance to come at a significant cost to power efficiency and battery life. I don’t anticipate such a leap to be possible in the next couple of years, but we’re still closely monitoring innovations in architectures and fabrication processes to see where things are going there. 
+Earlier today, he spoke to CNBC on the same topic, saying “We’re looking at this performance target that we have as a stable target for a couple years.” Since the Steam Deck was released in February 2022, I assumed he was probably talking about 2024. 
+But “the next couple of years” is a longer timeframe than I thought — and while the Steam Deck can still technically play the latest PC games, it’s getting harder with the latest wave of demanding / poorly optimized games like The Last of Us Part I, Redfall and Starfield. 
+(I can confirm Starfield is now playable on Deck, in a “I’m willing to tolerate terrible graphics to advance this quest” way, as of the Steam Deck OS 3.5 Preview. Griffais credits “a targeted optimization effort in the Mesa radv Vulkan driver by our graphics driver team” to support unusual features like ExecuteIndirect, explaining that Valve learned how to optimize a similar GPU-driven rendering pipeline when it added support for Halo Infinite.)
+RelatedThe Steam Deck’s FSR vividly shows why a Nintendo Switch Pro would ruleActivision was briefed on Nintendo’s Switch 2 last yearValve answers our burning Steam Deck questions — including a possible Steam Controller 2
+All that said, Valve might totally still have a Steam Deck refresh in the works that doesn’t change the performance floor. There’s a rich history of console manufacturers releasing smaller, lighter, and more power efficient versions of the same hardware, and Nintendo has refreshed the Switch twice: once to improve the battery and once to improve the screen. 
+Screen and battery are the top pain points both Griffais and fellow designer Lawrence Yang want to address in a Steam Deck sequel, too, they told me in late 2022.
+And a new screen could unlock more perceived performance even if there’s no new chip to enhance the framerate. The Asus ROG Ally showed us that — playing Starfield on the Ally and an Ayaneo Geek 1S, which both basically house the same chip as each other, the game feels smoother on Asus largely because its variable refresh rate screen smooths out the dips. Valve could also raise the ceiling rather than the floor, if it had a plugged-in turbo mode like both those handhelds.
+Perhaps Valve just gets AMD to shrink and optimize the same chip to use less juice? Perhaps it finds a better screen? Perhaps just a larger battery? Or perhaps it just waits, and Valve’s mystery Galileo / Sephiroth turns out to be the long-awaited SteamVR standalone headset. 
+There’s also a theory that maybe Galileo is a Steam living room PC that can beam graphics to a headset, but Griffais threw some cold water on that idea last week.

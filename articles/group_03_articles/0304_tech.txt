@@ -1,0 +1,49 @@
+Author: Stephen Shankland
+Place of Publish: 
+  © 2023 CNET, a Red Ventures company.
+  All rights reserved.
+
+Published on: Sept. 21, 2023  7:49 a.m. PT
+Body: 
+Our expert, award-winning staff selects the products we cover and rigorously researches and tests our top picks. If you buy through our links, we may get a commission. Reviews ethics statement
+
+    The chipmaker is developing a sequel to its Tunnel Falls quantum processor. Quantum computing in coming years could improve batteries, finance and AI.
+  
+Intel's 12-qubit Tunnel Falls quantum processor, a few millimeters across, is nestled inside a circuit board with tiny wires leading to its electrical contacts.
+In the potentially revolutionary new technology of quantum computing, the number of qubits a machine uses to process data isn't the only factor that matters. But it's a big deal, and Intel believes its strategy -- staying as close to conventional computers as possible -- will pay off in the long run by enabling large qubit counts.
+By some measures, Intel lags rivals in developing quantum computers. It hopes to leapfrog them with quantum computer processors that eventually will have enough capacity to fulfill the promise of quantum computers in jobs like developing new battery or solar panel materials, making fertilizer cheaper to manufacture, optimizing financial investments, developing better waterproof clothing, and the somewhat scarier prospect of cracking today's encryption. Quantum computers also show promise for accelerating AI.
+Quantum computing relies on the weird physics of the ultrasmall. Conventional computers store data in bits that store either a zero or one, but the fundamental element quantum computers use to store and manipulate data, the qubit, can store a peculiar combination of zero and one through a phenomenon called superposition. And multiple qubits can be entangled, intertwining their computing fates in a way that stands to dramatically accelerate some computation tasks.
+Qubits are flighty creatures, easily perturbed by outside forces that derail computations. One approach to addressing that situation is by ganging multiple physical qubits into a single larger error-corrected qubit that doesn't lose the thread as fast. But error correction will mean quantum computers need even more qubits.
+"You've got to scale to millions of qubits, and you've got to scale to millions of error-correcting qubits to get to effective computing workloads," Intel Chief Technology Officer Greg Lavender said in a speech at Intel's Innovation conference Wednesday.
+It's too early to declare victory, but CCS Insight analyst James Sanders believes Intel's approach at least shows promise. "The idea of Intel trying to leverage decades of experience in manufacturing to build a qubit around silicon will inevitably work. I don't know if it's going to be a market leader," he said.
+Intel CEO Pat Gelsinger holds a 300mm wafer of Tunnel Falls quantum processors at the company's Innovation 2023 event.
+Intel rivals have machines with dozens of qubits, well over the 12 housed in Intel's Tunnel Falls quantum processor that Intel Labs Director Rich Uhlig showed off at Innovation. A sequel is in the works.
+"We are working on another one," Uhlig said, but he declined to share its qubit count. "I won't say how many. For us, it's less about the number and more about the quality."
+A 300mm silicon wafer studded with Tunnel Falls processors houses 24,000 qubits total -- Intel Chief Executive Pat Gelsinger showed one off during his keynote Tuesday   -- but that's a somewhat academic number until Intel improves the quality of the qubits. Quality factors include improving the reliability of qubit operations, increasing the connectivity between qubits within the processor, and later, tackling error correction, he said.
+Intel is also working on better technology to control the qubits using its Horse Ridge processor. It's complicated, since the quantum processors must run at such cold temperatures and processors throw off waste heat.
+Testing products is tough too, since it takes hours to cool hardware enough for quantum computing to work. For that reason, Intel made a device that can test thousands of processors at a time at cold temperatures to speed hardware development.
+There's more or less one way to make conventional computers: data processing circuitry elements called transistors that are etched into wafers of silicon crystal. In contrast, companies are exploring many very different ways to build a quantum computer. It's not yet clear which way will prevail or if multiple approaches will catch on.
+The circuit board housing Intel's Tunnel Falls quantum processor, the square at the center of the device, is about as big as an adult's hand.
+IBM, Google and startup Rigetti Computing  like superconducting qubits -- small circuits cooled to within a fraction of a degree of absolute zero. IonQ and Quantinuum like ion traps, which shuttle electrically charged atoms around for interactions that are slower but more reliable. Others are working with electrically neutral atoms or the light particles called photons.
+After exploring the superconducting qubit approach, also called transmon qubits, Intel instead picked a technique that's close to conventional microprocessor manufacturing -- already the company's bread and butter. It uses electrons housed in silicon chips, employing a quantum mechanical property called spin to record the qubit's state.
+"We're the only company working on silicon qubits, using the same process and materials we're already using, tweaking them a little bit to create leading-edge qubits," Gelsinger said in a Tuesday speech. "If we get this working, we can do this at scale."
+These spin qubits could be a contender in delivering the quantum computing progress that Sanders expects.
+"I'm convinced there will be something that is not a transmon [superconducting] or ion trap that ends up eclipsing the ability of quantum computing today by 2030," he said.
+
+      Laptops
+    
+
+      Desktops & Monitors
+    
+
+      Computer Accessories
+    
+
+      Photography
+    
+
+      Tablets & E-Readers
+    
+
+      3D Printers
+    

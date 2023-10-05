@@ -1,0 +1,4 @@
+Author: Bob Violino
+Place of Publish: The critical cybersecurity backup plan too many companies are ignoring
+Date of Publish: Published Mon, Jul 24 202311:20 AM EDT
+Body of Text: Given the cybersecurity threats and data privacy regulations organizations are facing, it's critical that companies have a solid succession plan in place for their chief information security officer.Roughly 41% of companies do not have a succession plan in place for their CISOs, according to data from executive recruiting firm Heidrick & Struggles.Without a clear CISO succession plan, organizations leave themselves exposed to significant cyber threats and risk, and unprepared to navigate the fallout from a breach.

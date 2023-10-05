@@ -1,0 +1,51 @@
+Author: Monica Chin
+Place of Publish: Intel Innovation 2023: the biggest announcements - The Verge
+Place of Publish: The Verge
+Place of Publish: The Verge
+Place of Publish: Expand
+Place of Publish: The Verge
+Place of Publish: Expand
+Place of Publish: Comments
+Place of Publish: Comments
+Place of Publish: The Verge
+Published on:  Sep 21, 2023, 10:41 PM UTC
+Body: 
+Intel has wrapped up its annual Innovation event in San Jose, where the chipmaker gave us a glimpse of what’s coming down the pipeline over the next few years. In case you don’t have a spare hour and a half to sit down and watch CEO Pat Gelsinger’s keynote, here are some important things we learned.
+Meteor Lake will launch on December 14th
+If you haven’t guessed, AI was kind of a theme here.
+The company officially introduced its “Meteor Lake” generation (known officially as the Intel Core Ultra) to the world at the Innovation keynote. These will succeed the 13th-Gen “Raptor Lake” line; they will be the first chips built on the new Intel 4 process and its first with a dedicated AI coprocessor inside. 
+RelatedIntel will launch Meteor Lake on December 14th — this is Intel’s Core Ultra
+They’re also Intel’s first consumer CPUs to graft together different chiplets for each component (which is something that competitors like AMD and Qualcomm have been doing for a while). In this case, there will be four tiles: compute, graphics, SoC, and I/O. 
+The SoC tile is essentially a low-power processor in itself. In addition to features like wireless connectivity, native HDMI 2.1 and DP 2.1 standards, and an integrated memory controller, the tile includes separate “low power island” E-cores that are specifically intended for lighter workloads. The idea is that this setup could offload lighter processes from the power-sucking compute tile. This, in theory, would allow the chips to save power, which is why Intel’s calling Meteor Lake the most efficient client processor it’s ever made.
+On the gaming front, Meteor Lake can incorporate Intel’s Arc graphics directly on-chip. Not every Meteor Lake processor will get these — they’re coming to “select MTL processor-powered systems with dual-channel memory” according to the fine print. 
+Intel will challenge AMD’s 3D V-Cache...at some point
+This is the Scar X3D, which put up some pretty bonkers frame rates in our testing. Photo by Amelia Holowaty Krales / The Verge
+In a Q&A session, Pat Gelsinger was asked whether Intel would challenge the 3D V-Cache technology that powers desktop chips like its Ryzen 7 7800X3D, tech which was also newly unveiled for laptops earlier this summer. Gelsinger confirmed in response that Intel does have a similar idea on its roadmap, though it won’t be part of the Meteor Lake generation. 
+For those unfamiliar, 3D V-Cache allows AMD to stack additional cache (high-speed, short-term memory) directly onto its CPU. The results we saw from the ROG Strix Scar X3D (the monstrous RTX 4090 gaming laptop where 3D V-Cache made its mobile debut) were great for AMD and worrisome for Intel. It’s an unbelievably powerful device that blows Intel’s 4090 offerings out of the water. 
+Intel needs a response to 3D V-Cache if it wants to stay on top of the high end gaming market. Sounds like it’s on the case.
+Lunar Lake exists
+Pat Gelsinger and his colleage Craig wait for the Lunar Lake PC to finish generating.
+In like, some capacity at least. The Day 1 keynote included the world’s first showing of a Lunar Lake system; we saw the PC generate a Taylor Swift-style song and a picture of a giraffe in a cowboy hat. You know, as computers do.
+Intel also confirmed that Lunar Lake is on track to release in 2024. Like its predecessor, the Meteor Lake sequel will use Intel’s Foveros design. It’s also supposed to mark the commercial debut of Intel’s 1.8nm manufacturing process, known as Intel 18A. (In human terms: Its transistors will be really, really, really freakin’ small.)
+“Panther Lake” is well underway
+You can just keep this picture on your phone or something to keep track.
+Gelsinger confirmed that a CPU generation called “Panther Lake” is set to be announced in 2025, and that the company has begun working on it. (This name was leaked earlier this year after an Intel engineer accidentally put it on LinkedIn.) We know almost nothing about Panther Lake right now, but Intel says it’s slated to enter production in fabs as soon as Q1 of 2024.
+For those keeping track (and let’s be honest, I know you all are), this means the progression will likely go: Meteor (2023), Arrow (2024), Lunar (2024, probably), Panther (2025).
+Modular chiplets are in the works
+Pat Gelsinger reveals Pike Creek.
+Gelsinger showed off Pike Creek, which is the world’s first working UCIe-enabled chiplet-based processor. UCIe stands for “Universal Chiplet Interconnect Express”, and it’s essentially a plug-and-play standard that can allow different silicon modules to work together in one chiplet package. One chipmaker could grab another company’s chiplet and snap it into their design. In theory, this would allow chipmakers to better specialize in certain types of chiplets and bring their products to market more quickly. 
+Intel will use the UCIe interface post-Arrow Lake, and it’s the first company to show functional silicon. (Intel donated the first version of the UCIe spec to the standards body that’s developing it.)
+Resin is out, glass is in
+Glaaaaasss.
+Intel currently uses an organic resin as the foundation of its chips. The company announced that it’s begun transitioning to new technology that will let chips sit on a bed of glass. This should give Intel more room to pack additional transistors, as well as (Intel expects) better data transfer, less warping, and less mechanical breakage under heat.  
+Don’t get too excited: This isn’t coming until the second half of this decade, and it will first appear in like, giant data center stuff.
+A couple reporters got to see this production process inside Intel’s factory. CNET has some cool photos.
+Xeon things are happening
+It’s a whole lot of cores.
+Gelsinger announced the upcoming Sierra Forest Xeon processor, which has 288 E-cores. You know, just in case you’re finding that however many cores you have right now is insufficient for your backyard data center. 
+Intel also confirmed that the 5th-Gen “Emerald Rapids” Xeon line will launch on December 14th of this year.
+Pat Gelsinger is a Swiftie 
+“I relate.” - Pat Gelsinger, probably.
+He did not actually say this himself, but his colleague Craig suggested that it might be the case, and Gelsinger kind of nodded in a sheepish way, which is all the proof I need. What do we all think his favorite album is? I get Reputation vibes.
+See you at the Eras Tour, Pat! 
+

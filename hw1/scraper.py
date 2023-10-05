@@ -1,3 +1,6 @@
+# By Group3 - Tyler Muha, Benjamin DeZutti, Bryan Zielcke, and Christian Goffredo
+# Date: 9/25/2023 
+
 import urllib
 import requests
 import re
@@ -343,7 +346,11 @@ techSoup11 = bs(techPage11.text, 'html.parser')
 author11 = techSoup11.find_all(class_ = "Author-authorName")
 publishPlace11 = techSoup11.find_all("title")
 techDate11 = techSoup11.find_all("time", datetime = "2023-09-21T11:53:31+0000")
+<<<<<<< HEAD:scraper.py
 techBody11 = techSoup11.find("div", class_ = "ArticleBody-articleBody")
+=======
+techBody11 = techSoup11.find(class_ = "group")
+>>>>>>> 61719e4962346107f1558eac03b5415d5b68d54b:hw1/scraper.py
 
 #Paste data into txt file   
 techText11 = open("0311_tech.txt", mode = "wt")
@@ -374,7 +381,11 @@ techSoup12 = bs(techPage12.text, 'html.parser')
 author12 = techSoup12.find_all(class_ ="Author-authorName")
 publishPlace12 = techSoup12.find_all("title")
 techDate12 = techSoup12.find_all("time", datetime = "2023-09-18T17:49:14+0000")
+<<<<<<< HEAD:scraper.py
 techBody12 = techSoup12.find("div", class_ = "ArticleBody-articleBody")
+=======
+techBody12 = techSoup12.find(class_ = "group")
+>>>>>>> 61719e4962346107f1558eac03b5415d5b68d54b:hw1/scraper.py
 
 
 #Paste into txt file
@@ -406,7 +417,11 @@ techSoup13 = bs(techPage13.text, 'html.parser')
 author13 = techSoup13.find_all(class_ = "Author-authorName")
 publishPlace13 = techSoup13.find_all("title")
 techDate13 = techSoup13.find_all("time", datetime = "2023-09-19T05:58:56+0000")
+<<<<<<< HEAD:scraper.py
 techBody13 = techSoup13.find("div", class_ = "ArticleBody-articleBody")
+=======
+techBody13 = techSoup13.find(class_ = "group")
+>>>>>>> 61719e4962346107f1558eac03b5415d5b68d54b:hw1/scraper.py
 
 #Paste into txt file
 techText13 = open("0313_tech.txt", mode = "wt")
@@ -437,7 +452,11 @@ techSoup14 = bs(techPage14.text, 'html.parser')
 author14 = techSoup14.find_all(class_ = "Author-authorName")
 publishPlace14 = techSoup14.find_all("title")
 techDate14 = techSoup14.find_all("time", datetime = "2023-07-24T15:20:46+0000")
+<<<<<<< HEAD:scraper.py
 techBody14 = techSoup14.find("div", class_ = "ArticleBody-articleBody")
+=======
+techBody14 = techSoup14.find(class_ = "group")
+>>>>>>> 61719e4962346107f1558eac03b5415d5b68d54b:hw1/scraper.py
 
 #Paste into txt file
 techText14 = open("0314_tech.txt", mode = "wt")
@@ -465,10 +484,17 @@ sciencePage3 = requests.get(scienceURL3)
 scienceSoup3 = bs(sciencePage3.text, 'html.parser')
 
 #Scrape for information
+<<<<<<< HEAD:scraper.py
 author15 = scienceSoup3.find("div", class_ = "Author-authorNameAndSocial")
 publishPlace15 = scienceSoup3.find_all("title")
 techDate15 = scienceSoup3.find_all("time", datetime = "2023-09-12T20:00:57+0000")
 techBody15 = techSoup14.find("div", class_ = "ArticleBody-articleBody")
+=======
+author15 = scienceSoup3.find(class_ = "group")
+publishPlace15 = scienceSoup3.find_all("title")
+techDate15 = scienceSoup3.find_all("time", datetime = "2023-09-12T20:00:57+0000")
+techBody15 = techSoup14.find(class_ = "group")
+>>>>>>> 61719e4962346107f1558eac03b5415d5b68d54b:hw1/scraper.py
 
 #Paste into txt file
 techText15 = open("0315_science.txt", mode = "wt")
@@ -488,4 +514,171 @@ for date in techDate15:
 for body in techBody15:
     techText15.write("Body of Text: " + body.text)
 
+<<<<<<< HEAD:scraper.py
 techText15.close()
+=======
+techText15.close()
+
+#FOR ARTICLE 16
+tech_url16 = "https://www.bbc.com/news/technology-66866577"
+tech_page16 = requests.get(tech_url16)
+techSoup16 = bs(tech_page16.text, 'html.parser')
+
+#Grab specifics
+tech_author16 = techSoup16.find_all(class_="ssrcss-68pt20-Text-TextContributorName e8mq1e96")
+tech_publishPlace16 = techSoup16.find_all(class_ = "ssrcss-17ehax8-Cluster e1ihwmse1")
+tech_publishDate16 = techSoup16.find_all("time", datetime="2023-09-21T11:56:58.000Z")
+tech_body16 = techSoup16.find_all(class_ ="ssrcss-11r1m41-RichTextComponentWrapper ep2nwvo0")
+
+#paste into text document
+techText16 = open("0316_tech.txt", mode="wt")
+
+for authors in tech_author16:
+    techText16.write("Author: " + authors.text)
+    techText16.write('\n')
+
+for places in tech_publishPlace16:
+    techText16.write("Place of Publish: " + places.text)
+    techText16.write('\n')
+
+for date in tech_publishDate16:
+    techText16.write("Published on: " + date.text)
+    techText16.write('\n')
+
+techText16.write("Body: " + '\n')
+for body in tech_body16:
+    techText16.write(body.text)
+    techText16.write('\n')
+
+techText16.close()
+
+#FOR ARTICLE 17
+tech_url17 = "https://www.cnn.com/2023/09/25/tech/amazon-invests-anthropic-ai/index.html"
+tech_page17 = requests.get(tech_url17)
+techSoup17 = bs(tech_page17.text, 'html.parser')
+
+#Grab specifics
+tech_author17 = techSoup17.find_all(class_ = "byline__names")
+tech_publishPlace17 = techSoup17.find_all(class_ = "footer__copyright-text")
+tech_publishDate17 = techSoup17.find_all(class_ = "timestamp")
+tech_body17 = techSoup17.find_all(class_ = "article__content")
+#paste into text document
+techText17 = open("0317_tech.txt", mode="wt")
+
+for authors in tech_author17:
+    techText17.write("Author: " + authors.text)
+    techText17.write('\n')
+
+for places in tech_publishPlace17:
+    techText17.write("Place of Publish: " + places.text)
+    techText17.write('\n')
+
+for date in tech_publishDate17:
+    techText17.write("Published on: " + date.text)
+    techText17.write('\n')
+
+techText17.write("Body: " + '\n')
+for body in tech_body17:
+    techText17.write(body.text)
+    techText17.write('\n')
+
+techText17.close()
+
+#FOR ARTICLE 18
+tech_url18 = "https://www.bbc.com/news/technology-66913551"
+tech_page18 = requests.get(tech_url18)
+techSoup18 = bs(tech_page18.text, 'html.parser')
+
+#Grab specifics
+tech_author18 = techSoup18.find_all(class_ = "ssrcss-68pt20-Text-TextContributorName e8mq1e96")
+tech_publishPlace18 = techSoup18.find_all(class_ = "ssrcss-17ehax8-Cluster e1ihwmse1")
+tech_publishDate18 = techSoup18.find_all("time", datetime="2023-09-25T16:02:36.000Z")
+tech_body18 = techSoup18.find_all(class_ = "ssrcss-11r1m41-RichTextComponentWrapper ep2nwvo0")
+
+#paste into text document
+techText18 = open("0318_tech.txt", mode="wt")
+
+for authors in tech_author18:
+    techText18.write("Author: " + authors.text)
+    techText18.write('\n')
+
+for places in tech_publishPlace18:
+    techText18.write("Place of Publish: " + places.text)
+    techText18.write('\n')
+
+for date in tech_publishDate18:
+    techText18.write("Published on: " + date.text)
+    techText18.write('\n')
+
+techText18.write("Body: " + '\n')
+for body in tech_body18:
+    techText18.write(body.text)
+    techText18.write('\n')
+
+techText18.close()
+
+#FOR ARTICLE 19
+tech_url19 = "https://www.cnn.com/2023/09/25/tech/chatgpt-open-ai-humanlike-update/index.html"
+tech_page19 = requests.get(tech_url19)
+techSoup19 = bs(tech_page19.text, 'html.parser')
+
+#Grab specifics
+tech_author19 = techSoup19.find_all(class_ = "byline__name")
+tech_publishPlace19 = techSoup19.find_all(class_ = "footer__copyright-text")
+tech_publishDate19 = techSoup19.find_all(class_ = "timestamp")
+tech_body19 = techSoup19.find_all(class_ = "article__content")
+#paste into text document
+techText19 = open("0319_tech.txt", mode="wt")
+
+for authors in tech_author19:
+    techText19.write("Author: " + authors.text)
+    techText19.write('\n')
+
+for places in tech_publishPlace19:
+    techText19.write("Place of Publish: " + places.text)
+    techText19.write('\n')
+
+for date in tech_publishDate19:
+    techText19.write("Published on: " + date.text)
+    techText19.write('\n')
+
+techText19.write("Body: " + '\n')
+for body in tech_body19:
+    techText19.write(body.text)
+    techText19.write('\n')
+
+techText19.close()
+
+#FOR ARTICLE 20
+tech_url20 = "https://www.bbc.com/news/science-environment-66893661"
+tech_page20 = requests.get(tech_url20)
+techSoup20 = bs(tech_page20.text, 'html.parser')
+
+#Grab specifics
+tech_author20 = techSoup20.find_all(class_="ssrcss-68pt20-Text-TextContributorName e8mq1e96")
+tech_publishPlace20 = techSoup20.find_all(class_ ="ssrcss-17ehax8-Cluster e1ihwmse1")
+tech_publishDate20 = techSoup20.find_all("time", datetime="2023-09-25T02:27:12.000Z")
+tech_body20 = techSoup20.find_all(class_ = "ssrcss-11r1m41-RichTextComponentWrapper ep2nwvo0")
+
+#paste into text document
+techText20 = open("0320_science.txt", mode="wt")
+
+for authors in tech_author20:
+    techText20.write("Author: " + authors.text)
+    techText20.write('\n')
+
+for places in tech_publishPlace20:
+    techText20.write("Place of Publish: " + places.text)
+    techText20.write('\n')
+
+for date in tech_publishDate20:
+    techText20.write("Published on: " + date.text)
+    techText20.write('\n')
+
+techText20.write("Body: " + '\n')
+for body in tech_body20:
+    techText20.write(body.text)
+    techText20.write('\n')
+
+techText20.close()
+>>>>>>> 61719e4962346107f1558eac03b5415d5b68d54b:hw1/scraper.py

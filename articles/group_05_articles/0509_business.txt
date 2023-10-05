@@ -1,0 +1,19 @@
+Amazon is investing up to $4 billion in Anthropic and taking a minority stake in the artificial intelligence startup, the two companies said Monday. 
+
+The investment underscores how Big Tech companies are pouring money into AI as they race to capitalize on the opportunities that the latest generation of the technology is set to fuel. 
+
+Amazon and Anthropic said the deal is part of a broader collaboration to develop so-called foundation models, which underpin the generative AI systems that have captured global attention. 
+
+Foundation models, also known as large language models, are trained on vast pools of online information, like blog posts, digital books, scientific articles and pop songs to generate text, images and video that resemble human work. 
+
+Under the agreement, Anthropic is making Amazon its primary cloud computing service and using the online retail giant’s custom chips as part of work to train and deploy its generative AI systems. 
+
+San Francisco-based Anthropic was founded by former staffers from OpenAI, the maker of the ChatGPT AI chatbot that made a global splash with its ability to come up with answers mimicking human responses. 
+
+Anthropic has released its own ChatGPT rival, dubbed Claude. The latest version, which is available in the U.S. and U.K., is capable of “sophisticated dialogue and creative content generation to complex reasoning and detailed instruction,” the company said. 
+
+Amazon is scrambling to catch up with rivals like Microsoft, which invested $1 billion in OpenAI in 2019, followed by another multibillion-dollar investment at the start of year. 
+
+Amazon has been rolling out new services to keep up with the AI arms race, including an update for its popular assistant Alexa so users can have more human-like conversations and AI-generated summaries of product reviews for consumers. 
+
+© 2023 NBC UNIVERSAL 

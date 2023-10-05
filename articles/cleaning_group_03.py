@@ -38,6 +38,7 @@ for dir in directoryList:
 
         updated_ea = ' '.join(updated_ea)
 
+        #keep words that would normally be replaced through the tokenizer
         updated_ea = updated_ea.replace('not', 'not_')
         updated_ea = updated_ea.replace("wasn't", "wasn't_")
 
@@ -69,7 +70,8 @@ for dir in directoryList:
                 lemmatized_sentence.append(lemmatizer.lemmatize(word[0], mapped_tag))
             else:
                 lemmatized_sentence.append(word[0])
-
+        
+        #add new stopwords
         stops = list(stopwords.words('english')) + ['!', '#', "'s", '(', ')', '5-foot-not_hing', '@']
 
         article_no_stopwords = []

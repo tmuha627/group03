@@ -2,7 +2,6 @@ Author: Laura He
 Date: Fri September 22, 2023
 Publisher: CNN Business
 Title: China just stopped exporting two minerals the world’s chipmakers need
-Article:
 
 China’s exports of two rare minerals essential for manufacturing semiconductors fell to zero in August, a month after Beijing imposed curbs on sales overseas, citing national security.
 

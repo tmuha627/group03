@@ -1,3 +1,7 @@
+
+
+
+
 A doorbell camera in Chesterfield, Virginia, recently caught a man snatching a box containing a $1,600 new iPad from the arms of a FedEx delivery driver. Barely a day goes by without a similar report. Package theft, often referred to as "porch piracy," is a big crime business.
 While the price tag of any single stolen package isn't extreme — a study by Security.org found that the median value of stolen merchandise was $50 in 2022 — the absolute level of package theft is high and rising. In 2022, 260 million delivered packages were stolen, according to home security consultant SafeWise, up from 210 million packages the year before. All in all, it estimated that 79% of Americans were victims of porch pirates last year.
 In response, some of the big logistics companies have introduced technologies and programs designed to stop the crime wave. One of the most recent examples set to soon go into wider deployment came in June from UPS, with its API for DeliveryDefense, an AI-powered approach to reducing the risk of delivery theft. The UPS tech uses historic data and machine learning algorithms to assign each location a "delivery confidence score," which is rated on a one to 1,000 scale.

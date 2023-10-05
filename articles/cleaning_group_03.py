@@ -17,8 +17,11 @@ directory04 = "C:/Users/Tyler/Desktop/Web&Text/group03/articles/group_04_article
 directory05 = "C:/Users/Tyler/Desktop/Web&Text/group03/articles/group_05_articles"
 directory06 = "C:/Users/Tyler/Desktop/Web&Text/group03/articles/professor_articles_initial_centroids"
 
+#list of articles
 directoryList = [directory01, directory02, directory03, directory04, directory05, directory06]
+#loop through folders
 for dir in directoryList:
+    #loop through the files in the folders
     for files in os.listdir(dir):
         with open(os.path.join(dir, files), encoding="utf-8", errors="ignore") as f:
             ea = f.readlines()

@@ -8,7 +8,7 @@ import math
 import numpy
 
 # All Directories
-input_directory = "C:/TextMiningProject-Shared/group03/cleaned-articles"
+input_directory = "C:/TextMiningProject-Shared/group03/hw4/cleaned articles"
 output_directory = "C:/TextMiningProject-Shared/group03/hw4/output directory"
 unique_tokens_directory = 'C:/TextMiningProject-Shared/group03/hw4/unique tokens'  # New directory for unique tokens
 output_table_directory = 'C:/TextMiningProject-Shared/group03/hw4/output table'  # New directory for the output table
@@ -104,3 +104,55 @@ output_table_path = os.path.join(output_table_directory, 'token_count_table.csv'
 table_df.to_csv(output_table_path, index=False)
 
 print("Tokenization, extraction of unique tokens, token frequency calculation, table creation, corpus term frequency, and IDF added completed.")
+
+
+from sklearn.feature_extraction.text import TfidfTransformer
+
+# Initialize CountVectorizer
+count_vectorizer = CountVectorizer(vocabulary=sorted_unique_tokens)
+
+# Create a list to store data for the table
+table_data = []
+
+# Create a document-term matrix for the entire corpus
+corpus_text = []
+for file_path in tokenized_file_paths:
+    with open(file_path, 'r', encoding='utf-8') as input_file:
+        text = input_file.read()
+        corpus_text.append(text)
+
+corpus_document_term_matrix = count_vectorizer.transform(corpus_text)
+
+# Initialize TfidfTransformer and fit it to the entire corpus document-term matrix
+tfidf_transformer = TfidfTransformer()
+tfidf_transformer.fit(corpus_document_term_matrix)
+
+# Process each text file using TfidfTransformer
+for file_path in tokenized_file_paths:
+    filename = os.path.basename(file_path)
+    article_id = os.path.splitext(filename)[0]
+    tfidf_row_label = f"{article_id}_tfidf"  # New row label
+    
+    with open(file_path, 'r', encoding='utf-8') as input_file:
+        text = input_file.read()
+        
+        # Transform the text into a TF-IDF matrix
+        tfidf_matrix = tfidf_transformer.transform(count_vectorizer.transform([text]))
+        
+        # Convert the TF-IDF matrix into a dictionary
+        tfidf_values = dict(zip(sorted_unique_tokens, tfidf_matrix.toarray()[0]))
+        
+        # Append the data for the table with the new row label
+        table_data.append([tfidf_row_label] + [tfidf_values[token] for token in sorted_unique_tokens])
+
+# Create a DataFrame for the table
+column_names = ['Article ID'] + sorted_unique_tokens
+
+table_df = pd.DataFrame(data=table_data, columns=column_names)
+
+# Save the DataFrame to a CSV file in the "output_table" directory
+output_table_path = os.path.join(output_table_directory, 'tfidf_table.csv')
+table_df.to_csv(output_table_path, index=False)
+
+print("TF-IDF calculation and table creation completed.")
+

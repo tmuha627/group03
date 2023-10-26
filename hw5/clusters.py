@@ -8,14 +8,10 @@ tfidf_vectors = pd.read_excel("./hw4/output table/tfidf_table.xlsx", index_col=0
 # shape vector
 tfidf_vectors.shape
 
-#setting up clustering
-tfidf_vectors = tfidf_vectors[['cleaned_9901_sports_tokens_tfidf','cleaned_0101_sports_tokens_tfidf','cleaned_0102_sports_tokens_tfidf','cleaned_0103_sports_tokens_tfidf',
-                               'cleaned_9902_food_tokens_tfidf', 'cleaned_0204_food_tokens_tfidf', 'cleaned_0206_food_tokens_tfidf', 'cleaned_0207_food_tokens_tfidf',
-                               'cleaned_9903_tech_tokens_tfidf', 'cleaned_0307_tech_tokens_tfidf', 'cleaned_0301_tech_tokens_tfidf', 'cleaned_0309_tech_tokens_tfidf',
-                               'cleaned_9904_science_tokens_tfidf', 'cleaned_science_0409_tokens_tfidf', 'cleaned_science_0412_tokens_tfidf', 'cleaned_science_0403_tokens_tfidf',
-                               'cleaned_9905_business_tokens_tfidf', 'cleaned_0501_business_tokens_tfidf', 'cleaned_0514_business_tokens_tfidf', 'cleaned_0516_business_tokens_tfidf',
-                               'cleaned_9906_politics_tokens_tfidf', 'cleaned_0520_politics_tokens_tfidf', 'cleaned_0515_politics_tokens_tfidf', 'cleaned_0510_politics_tokens_tfidf']]
+#reindex
+tfidf_vectors = tfidf_vectors.reindex(sorted(tfidf_vectors.columns), axis=1)
 
+#6 clusters, one for each topic created here
 tfidf_vectors['sports_centroid'] = tfidf_vectors['cleaned_9901_sports_tokens_tfidf']
 tfidf_vectors['food_centroid'] = tfidf_vectors['cleaned_9902_food_tokens_tfidf']
 tfidf_vectors['tech_centroid'] = tfidf_vectors['cleaned_9903_tech_tokens_tfidf']
@@ -23,15 +19,10 @@ tfidf_vectors['science_centroid'] = tfidf_vectors['cleaned_9904_science_tokens_t
 tfidf_vectors['business_centroid'] = tfidf_vectors['cleaned_9905_business_tokens_tfidf']
 tfidf_vectors['politics_centroid'] = tfidf_vectors['cleaned_9906_politics_tokens_tfidf']
 
-tfidf_vectors = tfidf_vectors.reindex(sorted(tfidf_vectors.columns), axis=1)
-
-# show vectors
-tfidf_vectors
-
 #ITERATION 1
 from scipy.spatial.distance import cosine
 
-#creating the distance matrix
+#creating the distance matrix -- get distance of each vector to each centroid
 distance_matrix = pd.DataFrame(columns=['sports_centroid','food_centroid','tech_centroid','science_centroid','business_centroid','politics_centroid'])
 
 for col in tfidf_vectors.columns:
@@ -85,7 +76,7 @@ tfidf_vectors['science_centroid'] = tfidf_vectors[science_cluster].sum(axis=1)
 tfidf_vectors['business_centroid'] = tfidf_vectors[business_cluster].sum(axis=1)
 tfidf_vectors['politics_centroid'] = tfidf_vectors[politics_cluster].sum(axis=1)
 
-#ITERATION 2
+#ITERATION 2 (same thing as iteration 1)
 distance_matrix = pd.DataFrame(columns=['sports_centroid','food_centroid','tech_centroid','science_centroid','business_centroid','politics_centroid'])
 
 for col in tfidf_vectors.columns:
@@ -129,8 +120,27 @@ for doc in distance_matrix.index:
     if 'politics' in str(centroid):
         politics_cluster.append(str(doc))
 
-print(politics_cluster)
+# adjusting data to fit into dataFrame
+len_s, len_f, len_t, len_sc, len_b, len_p = len(sports_cluster), len(food_cluster), len(tech_cluster), len(science_cluster), len(business_cluster), len(politics_cluster)
+max_len = max(len_s, len_f, len_t, len_sc, len_b, len_p)
 
+if not max_len == len_s:
+    sports_cluster.extend(['']*(max_len-len_s))
+if not max_len == len_f:
+    food_cluster.extend(['']*(max_len-len_f))
+if not max_len == len_t:
+    tech_cluster.extend(['']*(max_len-len_t))
+if not max_len == len_sc:
+    science_cluster.extend(['']*(max_len-len_sc))
+if not max_len == len_b:
+    business_cluster.extend(['']*(max_len-len_b))
+if not max_len == len_p:
+    politics_cluster.extend(['']*(max_len-len_p))
 
-
-
+excel = pd.DataFrame.from_dict({'sports_cluster'  :sports_cluster,
+            'food_cluster'    :food_cluster,
+            'tech_cluster'    :tech_cluster,
+            'science_cluster' :food_cluster,
+            'business_cluster':business_cluster,
+            'politics_cluster':politics_cluster
+            }).to_excel("cluster_group_3.xlsx", header=True, index=False)

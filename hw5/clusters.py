@@ -144,3 +144,5 @@ excel = pd.DataFrame.from_dict({'sports_cluster'  :sports_cluster,
             'business_cluster':business_cluster,
             'politics_cluster':politics_cluster
             }).to_excel("cluster_group_3.xlsx", header=True, index=False)
+
+tfid = pd.DataFrame(tfidf_vectors).to_excel("centroid_group_3.xlsx", header=True, index=True)

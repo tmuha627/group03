@@ -1,10 +1,15 @@
-import sys
-print(sys.version)
-
-# Import the required libraries 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import LabelEncoder
 import json
+import warnings
+from sklearn import metrics
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
+import matplotlib.pyplot as plt
+import itertools
+from sklearn.metrics import confusion_matrix
+import numpy as np
+
 
 print ("Read Dataset ... ")
 def read_dataset(path):
@@ -25,7 +30,6 @@ for i in range(5):
     print(Y[i],'|',X[i],'\n')
 
 print ("Divide into training and validation sets")
-from sklearn.model_selection import train_test_split
 X_train, X_test, y_train, y_test = train_test_split(X, Y, test_size=0.20, random_state=42)
 
 print(len(X_train),len(y_train),len(X_test),len(y_test))
@@ -41,19 +45,14 @@ def tfidf_features(txt, flag):
     return x 
 
 
-
 XX = tfidf_features(X_train, flag="train")
 XX_test = tfidf_features(X_test, flag="test")
 
-# Label Encoding - Target 
+
 lb = LabelEncoder()
 yy = lb.fit_transform(y_train)
 
-import warnings
-warnings.filterwarnings("ignore")  #not a great idea in general, but it cleans up the output when using scikit-learn
-#obviously anything that triggers an error won't get ignored
-
-from sklearn.neighbors import KNeighborsClassifier
+warnings.filterwarnings("ignore") 
 
 knn = KNeighborsClassifier(n_neighbors=5)
 knn.fit(XX, yy)
@@ -61,8 +60,7 @@ knn.fit(XX, yy)
 yy_test = knn.predict(XX_test)
 yy_pred = lb.inverse_transform(yy_test)
 
-from sklearn import metrics
-# Model Accuracy, how often is the classifier correct?
+# model accuracy, how often is the classifier correct
 print("Accuracy:",metrics.accuracy_score(y_test, yy_pred))
 
 class_names =[]
@@ -70,18 +68,11 @@ for i in range(len(y_test)):
     if y_test[i] not in class_names:
         class_names.append(y_test[i])
 
-#Confusion matrix stolen from
-#https://scikit-learn.org/stable/auto_examples/model_selection/plot_confusion_matrix.html
-import matplotlib.pyplot as plt
-import itertools
+
 def plot_confusion_matrix(cm, classes,
                           normalize=False,
                           title='Confusion matrix',
                           cmap=plt.cm.Blues):
-    """
-    This function prints and plots the confusion matrix.
-    Normalization can be applied by setting `normalize=True`.
-    """
     if normalize:
         cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
 
@@ -103,22 +94,17 @@ def plot_confusion_matrix(cm, classes,
     plt.xlabel('Predicted label')
     plt.tight_layout()
 
-# Compute confusion matrix
-#Confusion matrix stolen from
-#https://scikit-learn.org/stable/auto_examples/model_selection/plot_confusion_matrix.html
-from sklearn.metrics import confusion_matrix
-import numpy as np
-
+# run confusion matrix
 cnf_matrix = confusion_matrix(y_test, yy_pred)
 np.set_printoptions(precision=2)
 
-# Plot non-normalized confusion matrix
+# plot non-normalized confusion matrix
 plt.figure(figsize=(12, 10))
 plot_confusion_matrix(cnf_matrix, classes=class_names,
                       title='Confusion matrix, without normalization')
 
 plt.savefig("figure1.pdf", dpi="figure")
-# Plot normalized confusion matrix
+# plot normalized confusion matrix
 plt.figure(figsize=(12, 10))
 plot_confusion_matrix(cnf_matrix, classes=class_names, normalize=True,
                       title='Normalized confusion matrix')

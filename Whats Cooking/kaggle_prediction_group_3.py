@@ -13,6 +13,7 @@ import re
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer  # Added for stemming
 import nltk
+import csv
 
 # Download NLTK resources
 nltk.download('stopwords')
@@ -134,4 +135,33 @@ plot_confusion_matrix(cnf_matrix, classes=class_names, normalize=True,
                       title='Normalized confusion matrix')
 
 plt.savefig("figure2.pdf", dpi="figure")
+
+# Load the test dataset to get IDs
+Test_Data = read_dataset('Whats Cooking/testfile2a.json')
+
+# Clean and preprocess the test data
+X_test_data = [remove_common_recipe_words(remove_single_character_words(remove_non_alphabetic(stem_text(clean_text(" ".join(doc['ingredients']).lower()))))) for doc in Test_Data]
+
+# Transform the test data using TF-IDF
+XX_test_data = tfidf_features(X_test_data, flag="test")
+
+# Predict the cuisines for the test data
+yy_test_data = knn.predict(XX_test_data)
+yy_pred_data = lb.inverse_transform(yy_test_data)
+
+# Create a list of dictionaries with ID and Cuisine
+output_data = [{'ID': doc['id'], 'Cuisine': cuisine} for doc, cuisine in zip(Test_Data, yy_pred_data)]
+
+# Write the output to a CSV file
+output_file_path = 'predictions.csv'
+with open(output_file_path, 'w', newline='') as csvfile:
+    fieldnames = ['ID', 'Cuisine']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+    writer.writeheader()
+    for row in output_data:
+        writer.writerow(row)
+
+print(f"Predictions saved to {output_file_path}")
+
 plt.show()

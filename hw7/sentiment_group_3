@@ -1,0 +1,26 @@
+import pandas as pd
+import nltk
+import os
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
+from nltk.corpus import stopwords
+from nltk.tokenize import sent_tokenize, word_tokenize 
+from nltk.stem import WordNetLemmatizer
+
+#Load dataset
+data = pd.read_csv('hw7/sentiment_analysis_contest_test_file.csv')
+
+#Cleaning dataset
+def text_cleaning(text):
+
+    tokens = word_tokenize(text.lower())
+
+    filtered_tokens = [token for token in tokens if token not in stopwords.words('english')]
+
+    lemmatizer = WordNetLemmatizer()
+    lemmatized_tokens = [lemmatizer.lemmatize(token) for token in filtered_tokens]
+
+    cleaned_text = ' '.join(lemmatized_tokens)
+
+    return cleaned_text
+
+data['text'] = data['text'].apply(text_cleaning)

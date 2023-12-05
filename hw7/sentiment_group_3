@@ -1,26 +1,43 @@
 import pandas as pd
 import nltk
-import os
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from nltk.corpus import stopwords
-from nltk.tokenize import sent_tokenize, word_tokenize 
+from nltk.tokenize import word_tokenize 
 from nltk.stem import WordNetLemmatizer
 
-#Load dataset
+# Download NLTK resources (if not already downloaded)
+nltk.download('punkt')
+nltk.download('stopwords')
+nltk.download('vader_lexicon')
+
+# Load dataset
 data = pd.read_csv('hw7/sentiment_analysis_contest_test_file.csv')
 
-#Cleaning dataset
+# Cleaning dataset
 def text_cleaning(text):
-
     tokens = word_tokenize(text.lower())
-
     filtered_tokens = [token for token in tokens if token not in stopwords.words('english')]
-
     lemmatizer = WordNetLemmatizer()
     lemmatized_tokens = [lemmatizer.lemmatize(token) for token in filtered_tokens]
-
     cleaned_text = ' '.join(lemmatized_tokens)
-
     return cleaned_text
 
-data['text'] = data['text'].apply(text_cleaning)
+data['cleaned_text'] = data['text'].apply(text_cleaning)
+
+# Sentiment analysis
+def analyze_sentiment(text):
+    sid = SentimentIntensityAnalyzer()
+    sentiment_score = sid.polarity_scores(text)['compound']
+    
+    # Assign positive/negative label based on the compound score
+    sentiment_label = 'positive' if sentiment_score >= 0 else 'negative'
+    
+    return sentiment_label
+
+data['sentiment'] = data['cleaned_text'].apply(analyze_sentiment)
+
+# Save results to a new CSV file
+output_file = 'hw7/sentiment_group_3.csv'
+data.to_csv(output_file, index=False)
+
+print(f"Results saved to {output_file}")

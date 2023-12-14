@@ -2,7 +2,23 @@ import os
 import numpy as np
 import pandas as pd
 import time
+import re
 from sklearn.feature_extraction.text import CountVectorizer
+from nltk.corpus import stopwords
+
+# preprocess the articles
+def preprocess(text):
+    #define stopwords
+    stop_words = set(stopwords.words('english'))
+
+    #remove punctuation and numbers
+    text = re.sub(r'[^a-zA-Z\s%]|(?<!\d)\d{1,3}(?!\d)|\b\d{4}\b', '', text)
+
+    #remove stopwords
+    words = [word for word in text.split() if word.lower() not in stop_words]
+    return ' '.join(words)
+
+
 
 # create the document term matrix
 def create_doc_term_matrix(folder_path):
@@ -18,7 +34,8 @@ def create_doc_term_matrix(folder_path):
         file_path = os.path.join(subdirectory_path, file)
         with open(file_path, 'r', encoding='utf-8') as file:
             doc = file.read()
-            document_content_list.append(doc)
+            preprocessed_doc = preprocess(doc)
+            document_content_list.append(preprocessed_doc)
             file_name = os.path.basename(file_path)
             file_name = os.path.splitext(file_name)[0]
             doc_name.append(file_name)
@@ -79,11 +96,11 @@ def create_doc_term_matrix(folder_path):
     df = pd.DataFrame(topic_data)
     df.to_excel('LSA_group_3.xlsx', index=False)
 
-    for i, doc in enumerate(doc_name):
+    for i, preprocessed_doc in enumerate(doc_name):
         doc_vector = U_k[i, :]
         doc_topic = np.argmax(doc_vector)
         topic_name = topic_names[doc_topic]
-        topic_doc_data[topic_name].append(doc)
+        topic_doc_data[topic_name].append(preprocessed_doc)
     
     doc_topic_matrix = pd.DataFrame.from_dict(topic_doc_data, orient='index').transpose()
     doc_topic_matrix.to_excel('articles_topicized_group_3.xlsx', index=False)

@@ -94,7 +94,7 @@ def create_doc_term_matrix(folder_path):
         topic_data[topic_name].extend(top_terms)
 
     df = pd.DataFrame(topic_data)
-    df.to_excel('LSA_group_3.xlsx', index=False)
+    df.to_excel('topic_modeling_LSA_group_3.xlsx', index=False)
 
     for i, preprocessed_doc in enumerate(doc_name):
         doc_vector = U_k[i, :]
@@ -104,7 +104,7 @@ def create_doc_term_matrix(folder_path):
             topic_doc_data[topic_name].append(preprocessed_doc)
     
     doc_topic_matrix = pd.DataFrame.from_dict(topic_doc_data, orient='index').transpose()
-    doc_topic_matrix.to_excel('articles_topicized_group_3.xlsx', index=False)
+    doc_topic_matrix.to_excel('articles_by_topic_group_3.xlsx', index=False)
 
 folder_path = 'hw4'
 

@@ -70,9 +70,9 @@ def create_doc_term_matrix(folder_path):
     time.sleep(.5)
 
     # get number of topics
-    k = 5
+    k = 6
 
-    topic_names=["Tech", "Sports", "Business/Politics", "Food", "Science"]
+    topic_names=["Sports", "Tech", "Food", "Science", "Business", "Politics"]
 
     U_k = U[:, :k]
     D_k = np.diag(D[:k])
@@ -100,7 +100,8 @@ def create_doc_term_matrix(folder_path):
         doc_vector = U_k[i, :]
         doc_topic = np.argmax(doc_vector)
         topic_name = topic_names[doc_topic]
-        topic_doc_data[topic_name].append(preprocessed_doc)
+        if preprocessed_doc =="":
+            topic_doc_data[topic_name].append(preprocessed_doc)
     
     doc_topic_matrix = pd.DataFrame.from_dict(topic_doc_data, orient='index').transpose()
     doc_topic_matrix.to_excel('articles_topicized_group_3.xlsx', index=False)
